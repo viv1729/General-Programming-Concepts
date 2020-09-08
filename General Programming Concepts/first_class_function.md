@@ -126,7 +126,7 @@ log1()
     message: hello world
     
 
-#### A useful example
+#### An useful example
 
 
 ```python
