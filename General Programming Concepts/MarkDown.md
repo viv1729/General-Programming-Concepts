@@ -174,7 +174,10 @@ However, many renderers -- like Github support syntax highlighting. Which langua
 
 Blocks of code are either fenced by lines with three back-ticks ```, or are indented with four spaces. Use fenced code blocks -- they're easier and only they support syntax highlighting.
 
+
+```python
 Inline `code` has `back-ticks around` it.
+```
 
 Inline `code` has `back-ticks around` it.
 
@@ -216,7 +219,6 @@ But let's throw in a <b>tag</b>.
 No language indicated, so no syntax highlighting. 
 But let's throw in a <b>tag</b>.
 ```
-
 
 ## general highlight
 
@@ -289,6 +291,8 @@ If a task list item description begins with a parenthesis, you'll need to escape
 
 # Inline HTML
 
+
+```python
 <dl>
   <dt>Definition list</dt>
   <dd>Is something people use sometimes.</dd>
@@ -296,6 +300,7 @@ If a task list item description begins with a parenthesis, you'll need to escape
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
+```
 
 <dl>
   <dt>Definition list</dt>
@@ -396,7 +401,8 @@ Or, in pure Markdown, but losing the image sizing and border:
 
 ## use IPython.display
 
-Open [Jupyter Notebook](MarkDown.ipynb) to view this properly. 
+Open [Jupyter Notebook](MarkDown.ipynb) to view this properly.  
+*If still not visible, you might need to execute the cell as it's accessing an external site.*
 
 
 ```python
@@ -441,7 +447,8 @@ Audio(url="http://www.nch.com.au/acm/8k16bitpcm.wav")
 
 # External sites
 
-Open [Jupyter Notebook](MarkDown.ipynb) to view this properly. 
+Open [Jupyter Notebook](MarkDown.ipynb) to view this properly.  
+*If still not visible, you might need to execute the cell as it's accessing an external site.*
 
 
 ```python
