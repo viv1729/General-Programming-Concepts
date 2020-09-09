@@ -78,7 +78,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ```python
 1. First ordered list item
 2. Another item
- * Unordered sub-list. 
+ - Unordered sub-list.  
   
 **To have nested list, we need to give a leading space.**  
 To have a list items/paragrapgh lines together we need to give a trailing space (may be two).
@@ -99,23 +99,24 @@ Note that this line is separate, but within the same paragraph.
 
 1. First ordered list item
 2. Another item
- * Unordered sub-list. 
+    - Unordered sub-list. 
   
 **To have nested list, we need to give a leading space.**  
 To have a list items/paragrapgh lines together we need to give a trailing space (may be two).
   
   
-1. Actual numbers don't matter, just that it's a number
- 1. Ordered sub-list
-4. And another item.
+1. Actual numbers don't matter, just that it's a number  
+   A. Ordered sub-list  
+2. And another item.  
 
 
 **To have a line break without a paragraph, you will need to use two trailing spaces.**  
 Note that this line is separate, but within the same paragraph. 
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* Unordered list can use asterisks  
+- Or minuses  
++ Or pluses  
+
 
 # Links
 
