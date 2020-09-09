@@ -99,11 +99,7 @@ Note that this line is separate, but within the same paragraph.
 
 1. First ordered list item
 2. Another item
-<<<<<<< HEAD
     - Unordered sub-list. 
-=======
- - Unordered sub-list. 
->>>>>>> d3690f18ee236d40ebcfad3edcad4d297597b19b
   
 **To have nested list, we need to give a leading space.**  
 To have a list items/paragrapgh lines together we need to give a trailing space (may be two).
@@ -117,16 +113,10 @@ To have a list items/paragrapgh lines together we need to give a trailing space 
 **To have a line break without a paragraph, you will need to use two trailing spaces.**  
 Note that this line is separate, but within the same paragraph. 
 
-<<<<<<< HEAD
 * Unordered list can use asterisks  
 - Or minuses  
 + Or pluses  
 
-=======
-* Unordered list can use asterisks (may not work in github)
-- Or dash
-+ Or pluses (may not work in github)
->>>>>>> d3690f18ee236d40ebcfad3edcad4d297597b19b
 
 # Links
 
