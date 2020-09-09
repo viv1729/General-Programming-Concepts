@@ -181,7 +181,7 @@ Inline `code` has `back-ticks around` it.
 
 Inline `code` has `back-ticks around` it.
 
-![image.png](attachment:image.png)
+![image.png](output_99_0.jpeg)
 
 ```javascript
 var s = "JavaScript syntax highlighting";
