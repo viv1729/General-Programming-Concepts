@@ -200,6 +200,7 @@ But let's throw in a <b>tag</b>.
 
 ## general highlight
 
+*If its not visible, you might need to execute the cell.*
 
 ```python
 <mark>Marked text</mark>
