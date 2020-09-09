@@ -181,38 +181,16 @@ Inline `code` has `back-ticks around` it.
 
 Inline `code` has `back-ticks around` it.
 
-
-```python
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-```
+![image.png](attachment:image.png)
 
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
 
-
-```python
 ```python
 s = "Python syntax highlighting"
 print(s)
-```
-```
-
-```python
-s = "Python syntax highlighting"
-print(s)
-```
-
-
-```python
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
 ```
 
 ```
@@ -364,7 +342,7 @@ Embed
 
 
 
-![png](output_44_0.png)
+![png](output_42_0.png)
 
 
 
