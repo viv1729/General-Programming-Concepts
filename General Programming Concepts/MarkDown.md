@@ -2,6 +2,8 @@
 <h1>Table of Contents<span class="tocSkip"></span></h1>
 <div class="toc"><ul class="toc-item"><li><span><a href="#Headers" data-toc-modified-id="Headers-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Headers</a></span></li><li><span><a href="#Horizontal-Rule" data-toc-modified-id="Horizontal-Rule-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Horizontal Rule</a></span></li><li><span><a href="#Emphasis" data-toc-modified-id="Emphasis-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Emphasis</a></span></li><li><span><a href="#Lists" data-toc-modified-id="Lists-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Lists</a></span></li><li><span><a href="#Links" data-toc-modified-id="Links-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Links</a></span></li><li><span><a href="#Code-and-Syntax-Highlighting" data-toc-modified-id="Code-and-Syntax-Highlighting-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Code and Syntax Highlighting</a></span><ul class="toc-item"><li><span><a href="#general-highlight" data-toc-modified-id="general-highlight-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>general highlight</a></span></li></ul></li><li><span><a href="#Blockquotes" data-toc-modified-id="Blockquotes-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Blockquotes</a></span></li><li><span><a href="#Task-Lists" data-toc-modified-id="Task-Lists-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>Task Lists</a></span></li><li><span><a href="#Inline-HTML" data-toc-modified-id="Inline-HTML-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>Inline HTML</a></span></li><li><span><a href="#Images" data-toc-modified-id="Images-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>Images</a></span><ul class="toc-item"><li><span><a href="#use-IPython.display" data-toc-modified-id="use-IPython.display-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>use IPython.display</a></span></li></ul></li><li><span><a href="#Videos,-Audios" data-toc-modified-id="Videos,-Audios-11"><span class="toc-item-num">11&nbsp;&nbsp;</span>Videos, Audios</a></span><ul class="toc-item"><li><span><a href="#use-IPython.display" data-toc-modified-id="use-IPython.display-11.1"><span class="toc-item-num">11.1&nbsp;&nbsp;</span>use IPython.display</a></span></li></ul></li><li><span><a href="#External-sites" data-toc-modified-id="External-sites-12"><span class="toc-item-num">12&nbsp;&nbsp;</span>External sites</a></span></li><li><span><a href="#References" data-toc-modified-id="References-13"><span class="toc-item-num">13&nbsp;&nbsp;</span>References</a></span></li></ul></div>
 
+IPython.display sections might not render in Markdown properly. Open [Jupyter Notebook](MarkDown.ipynb) to view these. 
+
 # Headers
 
 
@@ -71,6 +73,29 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 # Lists
+
+
+```python
+1. First ordered list item
+2. Another item
+ * Unordered sub-list. 
+  
+**To have nested list, we need to give a leading space.**  
+To have a list items/paragrapgh lines together we need to give a trailing space (may be two).
+  
+  
+1. Actual numbers don't matter, just that it's a number
+ 1. Ordered sub-list
+4. And another item.
+
+
+**To have a line break without a paragraph, you will need to use two trailing spaces.**  
+Note that this line is separate, but within the same paragraph. 
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+```
 
 1. First ordered list item
 2. Another item
@@ -147,43 +172,46 @@ Code blocks are part of the Markdown spec, but syntax highlighting isn't.
 
 However, many renderers -- like Github support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. 
 
+Blocks of code are either fenced by lines with three back-ticks ```, or are indented with four spaces. Use fenced code blocks -- they're easier and only they support syntax highlighting.
+
+Inline `code` has `back-ticks around` it.
+
+Inline `code` has `back-ticks around` it.
+
 
 ```python
-Inline `code` has `back-ticks around` it.
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
 ```
-
-Inline `code` has `back-ticks around` it.
-
-
-```python
-Blocks of code are either fenced by lines with three back-ticks ```, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+```
 
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
+
+```python
 ```python
 s = "Python syntax highlighting"
 print(s)
 ```
- 
+```
+
+```python
+s = "Python syntax highlighting"
+print(s)
+```
+
+
+```python
 ```
 No language indicated, so no syntax highlighting. 
 But let's throw in a <b>tag</b>.
 ```
 ```
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print(s)
-```
- 
 ```
 No language indicated, so no syntax highlighting. 
 But let's throw in a <b>tag</b>.
@@ -261,8 +289,6 @@ If a task list item description begins with a parenthesis, you'll need to escape
 
 # Inline HTML
 
-
-```python
 <dl>
   <dt>Definition list</dt>
   <dd>Is something people use sometimes.</dd>
@@ -270,7 +296,6 @@ If a task list item description begins with a parenthesis, you'll need to escape
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
-```
 
 <dl>
   <dt>Definition list</dt>
@@ -307,6 +332,8 @@ Reference-style:
 
 ## use IPython.display
 
+Open [Jupyter Notebook](MarkDown.ipynb) to view this properly. 
+
 
 ```python
 from IPython.display import Image
@@ -332,7 +359,7 @@ Embed
 
 
 
-![png](output_37_0.png)
+![png](output_44_0.png)
 
 
 
@@ -368,6 +395,8 @@ Or, in pure Markdown, but losing the image sizing and border:
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/jGwO_UgTS7I/0.jpg)](http://www.youtube.com/watch?v=jGwO_UgTS7I)
 
 ## use IPython.display
+
+Open [Jupyter Notebook](MarkDown.ipynb) to view this properly. 
 
 
 ```python
@@ -412,6 +441,8 @@ Audio(url="http://www.nch.com.au/acm/8k16bitpcm.wav")
 
 # External sites
 
+Open [Jupyter Notebook](MarkDown.ipynb) to view this properly. 
+
 
 ```python
 from IPython.display import IFrame
@@ -436,9 +467,13 @@ IFrame('https://en.wikipedia.org/wiki/Machine_learning?useformat=mobile', width=
 
 # References
 
-1. http://louistiao.me/posts/demos/ipython-notebook-demo/
+1. https://www.markdownguide.org/extended-syntax/
 
-2. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+2. http://louistiao.me/posts/demos/ipython-notebook-demo/
+
+
+3. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 
 ```python
