@@ -152,7 +152,7 @@ print_p("A paragraph")
     <p>A paragraph</p
     
 
-### Reference
+### References
 
 https://en.wikipedia.org/wiki/First-class_function
 
