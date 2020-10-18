@@ -26,7 +26,7 @@ H2
 ---
 ```
 
-# Horizontal Rule
+# Horizontal Rule and Line Break
 
 
 ```python
@@ -49,6 +49,23 @@ Asterisks
 Underscores
 ___
 
+
+```python
+line1
+<br>
+<br>
+<br>
+line1
+```
+
+line1
+<br>
+<br>
+<br>
+line1
+
+
+*Sometimes, in both cases, you might need to leave a line afterwards last `<br>` or `___` for the effect to take place*
 
 
 # Emphasis
@@ -167,6 +184,7 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
+
 # Code and Syntax Highlighting
 
 Code blocks are part of the Markdown spec, but syntax highlighting isn't. 
@@ -217,7 +235,6 @@ But let's throw in a <b>tag</b>.
 
 # Blockquotes
 
-
 ```python
 > Blockquotes are very handy in email to emulate reply text.  
 > This line is part of the same quote.
@@ -242,8 +259,8 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
 
-# Task Lists
 
+# Task Lists
 
 ```python
 Task lists allow you to create a list of items with checkboxes. To create a task list, add dashes (-) and brackets with a space ([ ]) in front of task list items. To select a checkbox, add an x in between the brackets ([x]) 
@@ -255,9 +272,7 @@ Task lists allow you to create a list of items with checkboxes. To create a task
 If a task list item description begins with a parenthesis, you'll need to escape it with \:
 - [ ] \(Optional) Open a followup issue
 
-
 ```
-
 
  - [x] Finish my changes  
  - [ ] Push my commits to GitHub  
@@ -268,9 +283,7 @@ If a task list item description begins with a parenthesis, you'll need to escape
  - [ ] \(Optional) Open a followup issue
 
 
-
 # Inline HTML
-
 
 ```python
 <dl>
@@ -289,10 +302,10 @@ If a task list item description begins with a parenthesis, you'll need to escape
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
+
 
 # Images
 
-
 ```python
 Here's our logo (hover to see the title text):
 
@@ -314,6 +327,7 @@ Reference-style:
 ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
 
 ## use IPython.display
 
