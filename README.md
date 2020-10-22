@@ -6,7 +6,7 @@
     - Assigning the function to a variable
     - Passing the function as argument to another function
     - Returning function from another function
-      - 3.1  A useful example
+      - A useful example
 
 2. [Closure](Closure.md), [Code](Closure.ipynb)  
    Code, examples and explanation of what is Closure and how to use it. Topics covered:
