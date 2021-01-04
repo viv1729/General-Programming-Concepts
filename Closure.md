@@ -1,3 +1,5 @@
+<h1>Table of Contents<span class="tocSkip"></span></h1>
+
 - [Definition](#definition)
 - [First Class Function](#first-class-function)
 - [Simple Closure](#simple-closure)
